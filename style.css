@@ -653,6 +653,10 @@
   .new-line{
     display: block;
   }
+  .pr-section-6 .inner .r-side a p{
+    width: 205px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 580px) {
