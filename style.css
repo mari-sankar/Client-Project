@@ -717,13 +717,13 @@
 
 @media screen and (max-width: 380px) {
   .pr-section-1{
-    height: 45vh;
+    height: 50vh;
   }
   .pr-section-1 .body-content .content{
     margin-left: 40px;
   }
   .pr-section-1 .body-content .content h2{
-    padding-top: 55px;
+    padding-top: 50px;
   }
   .pr-section-1 .body-content .announce{
     top: 190px;
