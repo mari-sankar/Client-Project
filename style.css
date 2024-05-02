@@ -709,6 +709,9 @@
 }
 
 @media screen and (max-width: 390px) {
+  .pr-section-1{
+    height: 50vh;
+  }
   .pr-section-1 .body-content .announce{
     top: 240px;
   }
@@ -716,9 +719,6 @@
 }
 
 @media screen and (max-width: 380px) {
-  .pr-section-1{
-    height: 50vh;
-  }
   .pr-section-1 .body-content .content{
     margin-left: 40px;
   }
