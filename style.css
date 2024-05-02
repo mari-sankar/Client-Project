@@ -160,6 +160,9 @@
     padding-left: 3px;
     padding-right: 3px;
 }
+.new-line{
+  display: none;
+}
 .pr-section-4 .side{
     display: flex;
 }
@@ -303,7 +306,7 @@
 
 /* Responsive */
 
-@media (max-width: 1350px){
+@media screen and (max-width: 1350px){
   .pr-section-1 .body-content .content h2{
     padding-top: 320px; 
   }
@@ -315,7 +318,7 @@
   }
 } 
 
-@media (max-width: 1280px){
+@media screen and (max-width: 1281px){
   .pr-section-1 .body-content .content h2{
     padding-top: 250px; 
   }
@@ -327,7 +330,7 @@
   }
 }
 
-@media (max-width: 1250px){
+@media screen and (max-width: 1250px){
   .pr-section-1 .body-content .content h2{
     font-size: 110px;
   }
@@ -335,13 +338,13 @@
     width: 785px;
   }
 }
-@media (max-width: 1199px){
+@media screen and (max-width: 1199px){
   .pr-section-1 .body-content .content h2{
     padding-top: 290px;
     font-size: 95px;
   }
   .pr-section-1 .body-content .announce{
-    top: 275px;
+    top: 295px;
   }
   .pr-section-1 .body-content .announce img{
     width: 745px;
@@ -357,7 +360,9 @@
 }
 
 @media (max-width: 1024px) {
-
+  .pr-section-1{
+    height: 70vh;
+  }
   .pr-section-1 .body-content .content h2{
     font-size: 85px;
     padding-top: 200px;
@@ -441,29 +446,27 @@
 
 }
 
-@media (max-width: 935px) {
+@media screen and (max-width: 935px) {
   .pr-section-1 .body-content .content{
-    margin-left: 0;
+    margin-left: 55px;
   }
   .pr-section-1 .body-content .content h2{
-    font-size: 115px;
-    text-align: center;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    font-size: 95px;
+    padding-top: 65px;
   }
   .pr-section-1 .body-content .content h2 span{
     display: none;
   }
   .pr-section-1 .body-content .announce{
-    position: static;
     float: right;
+    top: 380px;
   }
   .pr-section-1 .body-content .announce img{
     width: 800px;
-    height: 570px;
+    height: 530px;
   }
   .pr-section-2{
-    margin-top: 70px;
+    margin-top: 165px;
   }
   .pr-section-2 .title h2{
     font-size: 240px;
@@ -521,14 +524,39 @@
     font-size: 33px;
   }
 }
-
-@media screen and (max-width: 780px) {
-  .pr-section-1 .body-content .content h2{
-    font-size: 95px;
+@media screen and (max-width: 865px) {
+  .pr-section-1{
+    height: 50vh;
+  }
+  .pr-section-1 .body-content .content{
+    margin-left: 55px;
   }
   .pr-section-1 .body-content .content h2{
-    padding-top: 60px;
-    padding-bottom: 80px;
+    font-size: 95px;
+    padding-top: 65px;
+  }
+  .pr-section-1 .body-content .announce{
+    float: right;
+    top: 260px;
+  }
+  .pr-section-1 .body-content .announce img{
+    width: 800px;
+    height: 530px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .pr-section-1{
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .pr-section-1{
+    height: 60vh;
+  }
+  .pr-section-1 .body-content .announce{
+    top: 290px;
   }
   .pr-section-1 .body-content .announce img{
     width: 700px;
@@ -555,5 +583,149 @@
   }
   .pr-section-6 .inner .l-side h2{
     margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .pr-section-1{
+    height: 70vh;
+  }
+  .pr-section-1 .body-content .announce{
+    top: 260px;
+  }
+  .pr-section-1 .body-content .content h2{
+    font-size: 60px;
+  }
+  .pr-section-1 .body-content .announce img{
+    width: 505px;
+    height: 325px;
+  }
+  .pr-section-3 .inner .card {
+    display: contents;
+  }
+  .pr-section-3 .inner .card img{
+    margin-top: 40px;
+  }
+  .pr-section-3 .inner .card .content{
+    text-align: center;
+    margin: 40px 10px 0 10px;
+  }
+  .pr-section-3 .inner .card .content h2{
+    font-size: 30px;
+  }
+  .pr-section-3 .inner .card .content p{
+    font-size: 20px;
+  }
+  .pr-section-3 .line{
+    margin-top: 50px;
+  }
+  .pr-section-4 .side{
+    display: block;
+  }
+  .pr-section-4 .side .inner{
+    width: fit-content;
+  }
+  .pr-section-4 .side .inner2{
+    display: none;
+  }
+  .pr-section-4 .title h2{
+    font-size: 35px;
+  }
+  .pr-section-5 .title h2{
+    font-size: 35px;
+    line-height: 7vh;
+  }
+  .pr-section-6 .inner{
+    display: block;
+  }
+  .pr-section-6 .inner .l-side{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .pr-section-6 .inner .l-side h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+  }
+  .new-line{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .pr-section-1{
+    height: 60vh;
+  }
+  .pr-section-2 .title h2{
+    font-size: 145px;
+  }
+  .pr-section-2 .title p{
+    font-size: 30px;
+  }
+  .pr-section-2 .subtitle h1{
+    font-size: 35px;
+  }
+  .pr-section-2 .subtitle p{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .pr-section-1{
+    height: 40vh;
+  }
+  .pr-section-1 .body-content .content h2{
+    font-size: 48px;
+  }
+  .pr-section-1 .body-content .announce img{
+    width: 365px;
+    height: 240px;
+  }
+  .pr-section-2{
+    margin-top: 90px;
+  }
+  .pr-section-2 .title h2{
+    font-size: 105px;
+  }
+  .pr-section-2 .title p{
+    font-size: 23px;
+  }
+  .pr-section-2 .subtitle h1{
+    font-size: 25px;
+  }
+  .pr-section-3 .title h2{
+    font-size: 35px;
+  }
+  .pr-section-3 .inner .card .content h2{
+    font-size: 28px;
+  }
+  .pr-section-3 .inner .card .content p{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .pr-section-1 .body-content .announce{
+    top: 240px;
+  }
+ 
+}
+
+@media screen and (max-width: 380px) {
+  .pr-section-1{
+    height: 45vh;
+  }
+  .pr-section-1 .body-content .content{
+    margin-left: 40px;
+  }
+  .pr-section-1 .body-content .content h2{
+    padding-top: 55px;
+  }
+  .pr-section-1 .body-content .announce{
+    top: 190px;
   }
 }
