@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+.header{
+    height: 10vh;
+}
+.social-media-2 .title {
+    color: #845ec2;
+    text-align: center;
+    font-weight: 700;
+}
+.social-media-2 .title h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.social-media-2 .title p{
+    font-size: 22px;
+}
+.carousel-slide .carousel-inner{
+    margin: 15px 70px;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 7px 7px black;
+    justify-content: center;
+}
+.carousel-slide .carousel-inner button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.carousel-slide .carousel-inner .previous, .carousel-slide .carousel-inner .next{
+    position: absolute;
+    top: 145px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+.carousel-slide .carousel-inner .next{
+    right: 80px;
+}
+.carousel-slide .carousel-inner button i{
+    font-size: 35px;
+}
+.carousel-slide .carousel-inner .carousel-item{
+    display: none;
+}
+.carousel-slide .carousel-inner .carousel-item.active{
+    display: block;
+}
+.carousel-slide .carousel-inner .carousel-item .row{
+    display: flex;
+    column-gap: 25px;
+}
+.carousel-slide .carousel-inner .carousel-item .row .left{
+    flex: 1;
+    background-color: #000;
+    border-radius: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.carousel-slide .carousel-inner .carousel-item .row .left h2{
+    color: #845ec2;
+    font-size: 64px;
+    text-align: start;
+    font-weight: 700;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-slide .carousel-inner .carousel-item .row .left p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #fff;
+}
+.carousel-slide .carousel-inner .carousel-item .row .right{
+    flex: 2;
+    border-radius: 20px;
+}
+.carousel-slide .carousel-inner .carousel-item .row .right img{
+    max-width: 100%;
+}
+.carousel-slide .carousel-inner .carousel-item .team-heading p{
+    margin-top: 10px;
+    color: #845ec2;
+    font-size: 30px;
+    font-weight: 700;
+}
+.carousel-slide .carousel-inner .carousel-item .icon{
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    position: relative;
+    top: -67px; 
+    float: right;
+    right: 15%;
+}
+
+@media screen and (max-width: 850px){
+    .social-media-2 .title h2 {
+        font-size: 35px;
+    }
+    .social-media-2 .title p {
+        font-size: 16px;
+    }
+    .carousel-slide .carousel-inner .carousel-item .row {
+        display: block;
+    }
+    .carousel-slide .carousel-inner .carousel-item .row .left {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .carousel-slide .carousel-inner .previous, .carousel-slide .carousel-inner .next {
+        top: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .social-media-2 .title h2 {
+        font-size: 18px;
+    }
+    .social-media-2 .title p {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .carousel-slide .carousel-inner {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+    .carousel-slide .carousel-inner .carousel-item .row .left h2{
+        font-size: 52px;
+    }
+    .carousel-slide .carousel-inner .next{
+        right: 50px;
+    }
+    .carousel-slide .carousel-inner .carousel-item .icon{
+        display: none;
+    }
+    .carousel-slide .carousel-inner .carousel-item .team-heading p{
+        font-size: 24px;
+    }
+}

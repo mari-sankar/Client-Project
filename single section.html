@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PR Service</title>
+        <link rel="stylesheet" href="section.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        referrerpolicy="no-referrer">
+        <script src="https://kit.fontawesome.com/8e4da32d54.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header"></section>
+        <section class="social-media-2">
+            <div class="title">
+                <h2>Here's Why You Need Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, veniam.</p>
+            </div>
+            <div class="carousel-slide">
+                <div class="carousel-inner">
+                    <button class="previous" onclick="prevSlide()"><i class="fa-solid fa-angle-left"></i></button>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="left">
+                                <h2>1</h2>
+                                <p>Theglammodel takes pride as we have been providing our services to models and 
+                                    photographers for 4+ years now. We have strong networks in the industry. We
+                                    have knowledge and experience that serve models and photographers with
+                                    opportunities and possibilities that further help in career growth.
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="/assets/1-bg.png" alt="">
+                            </div>
+                        </div>
+                        <div class="team-heading">
+                            <p>4+ years' experience</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="left">
+                                <h2>2</h2>
+                                <p>We understand that one package doesn't fit all, which is why we offer
+                                    customized packages to perfectly suit your specific needs.
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="/assets/2-bg.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-heading">
+                            <p>Customized package as per our client's need</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="left">
+                                <h2>3</h2>
+                                <p>Our expert team consists of talent explorers, managers, and creative
+                                    professionals, collaborators to shape and elevate the careers of the models.
+                                    These experts provide a path to a successful career. We have a dedicated and
+                                    hardworking team. 
+                                </p>
+                            </div>
+                            <div class="right">
+                                <img src="/assets/3-bg.png" alt="">
+                            </div>
+                        </div>
+                        <div class="team-heading">
+                            <p>Expert team</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <button class="next" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></button>
+                </div>                
+            </div>
+        </section>
+    </body>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } 
+                else {
+                    slide.classList.remove('active');
+                }
+            }
+        );}
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+           showSlide(currentSlide);
+        }
+        const interval = setInterval(nextSlide, 5000);
+        const slider = document.querySelector('.slider');
+        slider.addEventListener('mouseenter', () => clearInterval(interval));
+        slider.addEventListener('mouseleave', () => {
+            interval = setInterval(nextSlide, 5000);
+        });
+    </script>
+</html>
