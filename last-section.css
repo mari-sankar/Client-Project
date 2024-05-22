@@ -89,8 +89,22 @@ body, html {
 
 .count {
     position: absolute;
-    bottom: 10%;
+    /* bottom: 10%; */
     right: 10px;
+    margin-top: 10px;
     color: #fff;
     font-size: 50px;
+}
+
+@media screen and (max-width: 913px){
+    .section{
+        display: block;
+    }
+    .card-container{
+        justify-content: center;
+        width: auto;
+    }
+    .swiper-btn{
+        justify-content: center;        
+    }
 }
